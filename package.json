@@ -1,0 +1,26 @@
+{
+  "name": "epkl4-web",
+  "version": "1.0.0",
+  "author": "Zul Hilmi",
+  "description": "Website resmi e-PKL - Praktik Kerja Lapangan.",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "bootstrap": "5.2",
+    "bootstrap-icons": "^1.13.1",
+    "nuxt": "3.18",
+    "pocketbase": "^0.27.0"
+  },
+  "keywords": [
+    "website",
+    "e-PKL",
+    "PKL",
+    "praktik kerja lapangan",
+    "SMK",
+    "vokasi"
+  ],
+  "license": "MIT"
+}
