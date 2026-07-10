@@ -1,11 +1,11 @@
 # e-PKL Web
 
-Website that contains about Praktik Kerja Lapangan, Dasar Hukum, IDUKA and so on.
+Website containing about Praktik Kerja Lapangan, Dasar Hukum, IDUKA and so on.
 
 # Ingredient
 
-- Vue / Nuxt
 - Node
+- Vue / Nuxt
 
 # Setup
 
