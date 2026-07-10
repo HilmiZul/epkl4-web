@@ -12,7 +12,10 @@
 
     <div class="col-md-3 bg-white">
       <div class="fs-3 fw-bold">Apa itu e-PKL?</div>
-      <p>Aplikasi pemetaan dan jurnal peserta Praktik Kerja Lapangan.</p>
+      <p>
+        Aplikasi pemetaan dan jurnal peserta Praktik Kerja Lapangan. <br>
+        <span class="fw-bold border-bottom border-2 border-dark">EKOSISTEM</span> dibangung disini!
+      </p>
       <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#video"><i class="bi bi-camera-video"></i> Tonton video</button>
     </div>
 
@@ -32,11 +35,40 @@
 
   <div class="row mb-5">
     <div class="col-md-3 bg-white">
-      <div class="fs-3 fw-bold">Contoh Roadmap.</div>
+      <div class="fs-3 fw-bold">Pemetaan.</div>
       <p>Siswa berkonsultasi dan mendapatkan rekomendasi tempat PKL dari Kaprog. Biarkan TU mencetak surat.</p>
     </div>
     <div class="col-md-9">
-      <img src="~/assets/img/workflow-pemetaan.webp" alt="illustraion" class="illustration">
+      <img src="~/assets/img/roadmap-pemetaan.webp" alt="illustraion" class="illustration">
+    </div> 
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-9">
+      <img src="~/assets/img/journaling.webp" alt="illustraion" class="illustration">
+    </div> 
+    <div class="col-md-3 bg-white">
+      <div class="fs-3 fw-bold">Journaling.</div>
+      <p>
+        <span class="fw-bold">Realtime</span>. Paperless. Friendly. <br>
+        Tap ❤️ to validation! <br>
+        Wakasek? Just scrolling! <br>
+      </p>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-3 bg-white">
+      <div class="fs-3 fw-bold">Rapor.</div>
+      <p>
+        Submit. Validasi. Cetak. <br>
+        Walikelas? Duduk manis! <br>
+        Kurikulum? Just download! <br>
+        <span class="fw-bold border-bottom border-2 border-dark">The Ecosystem</span> is more than enough!
+      </p>
+    </div>
+    <div class="col-md-9">
+      <img src="~/assets/img/roadmap-rapor.webp" alt="illustraion" class="illustration">
     </div> 
   </div>
 
@@ -45,7 +77,7 @@
       <div class="card">
         <div class="card-body">
           <div class="fs-3 fw-bold">Statistik</div>
-          <p class="small text-muted">Ringkasan statistik Peserta, IDUKA dan Guru Pembimbing</p>
+          <p class="small text-muted">Ringkasan statistik Peserta, IDUKA dan Guru Pembimbing.</p>
 
           <StatisticStudent />
 
