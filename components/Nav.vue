@@ -10,8 +10,8 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <NuxtLink to="https://guru.epkl.web.id" target="_blank" class="btn btn-success btn-sm border border-2 border-dark nav-link fw-bold" aria-current="page">Guru <i class="bi bi-box-arrow-up-right"></i></NuxtLink>
-          <NuxtLink to="https://siswa.epkl.web.id" target="_blank" class="btn btn-warning btn-sm border border-2 border-dark nav-link fw-bold" aria-current="page">Siswa <i class="bi bi-box-arrow-up-right"></i></NuxtLink>
+          <NuxtLink to="https://guru.epkl.web.id" target="_blank" class="nav-link fw-bold" aria-current="page">Guru <i class="bi bi-box-arrow-up-right"></i></NuxtLink>
+          <NuxtLink to="https://siswa.epkl.web.id" target="_blank" class="nav-link fw-bold" aria-current="page">Siswa <i class="bi bi-box-arrow-up-right"></i></NuxtLink>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@
         <div class="card">
           <div class="card-body">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-3 mb-3">
                 <div class="mb-1">
                   <img src="https://epkl3.netlify.app/img/LOGO-SMKN4.b83eb212.png" alt="logo SMKN 4 tasikmalaya" class="logo me-2">
                   <img src="https://epkl3.netlify.app/img/logo.12ce1e81.png" alt="logo SMKN 4 tasikmalaya" class="logo">
