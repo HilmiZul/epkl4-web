@@ -40,8 +40,8 @@
     </div> 
   </div>
 
-  <div class="row mt-2">
-    <div class="col-md-8">
+  <div class="row mt-2 mb-5">
+    <div class="col-md-8 mb-5">
       <div class="card">
         <div class="card-body">
           <div class="fs-3 fw-bold">Statistik</div>
