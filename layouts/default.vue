@@ -19,7 +19,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 html, body {
-  background: #fff url('~/assets/img/bg.webp') no-repeat center bottom fixed;
+  /* background: #fff url('~/assets/img/bg.webp') no-repeat center bottom fixed; */
+  background-color: #fff;
   background-size: cover;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
