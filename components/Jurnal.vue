@@ -44,7 +44,7 @@ async function getJournals() {
   let res = await client.collection('jurnal').getList(1, 5, {
     fields: `created, deskripsi`,
     filter: `isDraft=false`,
-    order: `-created, -update`
+    sort: `-created, -updated`
   })
 
   if(res) {
