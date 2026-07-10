@@ -64,6 +64,8 @@
 <script setup>
 useHead({
   "title": "e-PKL.",
-  "description": "Website resmi e-PKL SMKN 4 Tasikmalaya."
+  "meta": [
+    { name: "description", content: "Website Resmi Informasi Publik PKL SMKN 4 Tasikmalaya." }
+  ]
 })
 </script>
