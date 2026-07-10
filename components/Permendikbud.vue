@@ -25,7 +25,7 @@ figure {
 figure .quote {
   position: absolute;
   top: -60px;
-  left: -30px;
+  left: -10px;
   z-index: 1;
   font-size: 5rem;
 }
