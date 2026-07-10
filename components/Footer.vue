@@ -14,7 +14,7 @@
                 membentuk ekosistem internal meliputi Siswa, Guru, TU, Jurusan, Kepala Sekolah dan Wakasek.
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 mb-3">
                 <div class="fs-5">Alamat</div>
                 Jl.Depok, Sukamenak, Purbaratu <br>
                 Kota tasikmalaya - 46196 <br>
@@ -43,9 +43,8 @@
 
             <div class="row">
               <div class="col-md-12">
-                <div class="text-center py-2">
+                <div class="text-center">
                   &copy;2018 - {{ year }} e-PKL Website. <br>
-                  <span class="smaller">Aset latar bersumber dari Canva.</span>
                 </div>
               </div>
             </div>
@@ -71,7 +70,7 @@ ul {
 
 ul li {
   list-style: none;
-  padding-bottom: .5rem;
+  padding-bottom: .4rem;
 }
 
 .logo {
