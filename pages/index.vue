@@ -1,11 +1,11 @@
 <template>
-  <div class="row my-5">
-    <div class="col-md-12">
+  <div class="row mb-5 justify-content-center">
+    <div class="col hero">
       <Permendikbud />
     </div>
   </div>
 
-  <div class="row mb-5">
+  <div class="row mb-5" id="epkl">
     <div class="col-md-9">
       <img src="~/assets/img/illustration.webp" alt="illustraion" class="illustration">
     </div> <!-- close ./col-md-8 -->
@@ -102,3 +102,13 @@ useHead({
   ]
 })
 </script>
+
+
+<style scoped>
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 70vh;
+}
+</style>
