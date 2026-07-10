@@ -45,6 +45,7 @@
       <div class="card">
         <div class="card-body">
           <div class="fs-3 fw-bold">Statistik</div>
+          <p class="small text-muted">Ringkasan statistik Peserta, IDUKA dan Guru Pembimbing</p>
 
           <StatisticStudent />
 
