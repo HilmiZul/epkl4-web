@@ -1,4 +1,4 @@
-# v1.1.0 (10 Juli 2026)
+# v1.2.0 (10 Juli 2026)
 
 - Fetch and realtime Journals
 - Fix and improvement
