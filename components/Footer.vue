@@ -75,6 +75,11 @@ ul li {
 
 .logo {
   width: 35px;
+  filter: grayscale(.99)
+}
+
+.logo:hover {
+  filter: none
 }
 
 .smaller {

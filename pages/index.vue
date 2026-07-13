@@ -16,7 +16,7 @@
         Aplikasi pemetaan dan jurnal peserta Praktik Kerja Lapangan. <br>
         <span class="fw-bold border-bottom border-2 border-dark">EKOSISTEM</span> dibangung disini!
       </p>
-      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#video"><i class="bi bi-camera-video"></i> Tonton video</button>
+      <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#video"><i class="bi bi-camera-video"></i> Tonton video</button>
     </div>
 
     <div class="modal" id="video" tabindex="-1">

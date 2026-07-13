@@ -46,7 +46,8 @@ html, body {
   box-shadow: 0.4rem 0.4rem 0 #000000 !important;
 }
 .card {
-  border-radius: 0 !important;
+  border-radius: 32px !important;
+  corner-shape: squircle;
   border: 2.5px solid #000000 !important;
   box-shadow: 0.4rem 0.4rem 0 #000000 !important;
 }
@@ -55,7 +56,8 @@ html, body {
   border-radius: 0 !important;
 }
 .alert {
-  border-radius: 0 !important;
+  border-radius: 32px !important;
+  corner-shape: squircle;
   border-width: 2px;
   border: 2px solid #000 !important;
 }
@@ -63,7 +65,8 @@ html, body {
   font-weight: 600;
   transition: all 0.1s ease-in-out;
   /*border: 1.9px solid #000000;*/
-  border-radius: 0 !important;
+  border-radius: 32px !important;
+  corner-shape: squircle;
   box-shadow: 0.19rem 0.19rem 0 #000000 !important;
 }
 .btn:hover {
@@ -280,5 +283,10 @@ header {
 
 .illustration {
   width: 100%;
+}
+
+.logo-brand {
+  border-radius: 32px !important;
+  corner-shape: squircle;
 }
 </style>
