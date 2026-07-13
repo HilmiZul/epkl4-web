@@ -5,7 +5,7 @@
         <div class="fs-3 fw-bold">Jurnal</div>
         <div class="text-muted mb-3">Update secara realtime</div>
 
-        <ul v-for="(item, i) in journals.items" :key="i" class="list-group">
+        <ul v-for="(item, i) in journals" :key="i" class="list-group">
           <li class="list-group-item border-bottom border-2 border-grey rounded-0">
             <!-- <div class="fw-bold">{{ item.expand }} &bull; <span class="text-muted">{{ item.iduka }}</span></div> -->
 
@@ -41,23 +41,19 @@ onMounted(() => {
 async function getJournals() {
   isLoading.value = true
 
-  let res = await client.collection('jurnal').getList(1, 5, {
-    fields: `created, deskripsi`,
-    filter: `isDraft=false`,
-    sort: `-created, -updated`
-  })
+  let res = await client.collection('jurnal_publik').getFullList({})
 
   if(res) {
     journals.value = res
 
     // konversi waktu UTC dari server ke full date lokal indo
-    for(let i=0; i<journals.value.items.length; i++) {
-      const date = new Date(journals.value.items[i].created);
+    for(let i=0; i<journals.value.length; i++) {
+      const date = new Date(journals.value[i].created);
       const options = {
         dateStyle: "full",
         timeStyle: "short"
       };
-      journals.value.items[i].created = new Intl.DateTimeFormat('id-ID', options).format(date);
+      journals.value[i].created = new Intl.DateTimeFormat('id-ID', options).format(date);
     }
 
     isLoading.value = false
