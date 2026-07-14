@@ -1,26 +1,50 @@
 <template>
   <div class="row">
     <div class="col-md-4">
-      <div class="alert alert-secondary">
-        <LoadingPlaceholder v-if="isLoading" :row="1" :col="2" />
-        <div v-else class="fs-2 fw-bold">{{ iduka }}</div>
-        <div class="text-muted fw-bold">Total IDUKA</div>
+      <div class="alert">
+        <div class="row">
+          <!-- <div class="col-md-3"> -->
+          <!--   <div class="fs-2"><i class="bi bi-buildings-fill"></i></div> -->
+          <!-- </div> -->
+
+          <div class="col-md-9">
+            <LoadingPlaceholder v-if="isLoading" :row="1" :col="2" />
+            <div v-else class="fs-2 fw-bold">{{ iduka }}</div>
+            <div class="text-muted fw-bold">Total IDUKA</div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="col-md-4">
       <div class="alert">
-        <LoadingPlaceholder v-if="isLoadingLuarKota" :row="1" :col="2" />
-        <div v-else class="fs-2 fw-bold">{{ iduka_luar }}</div>
-        <div class="text-muted fw-bold">IDUKA Luar Kota</div>
+        <div class="row">
+          <!-- <div class="col-md-3"> -->
+          <!--   <div class="fs-2"><i class="bi bi-globe"></i></div> -->
+          <!-- </div> -->
+
+          <div class="col-md-9">
+            <LoadingPlaceholder v-if="isLoadingLuarKota" :row="1" :col="2" />
+            <div v-else class="fs-2 fw-bold">{{ iduka_luar }}</div>
+            <div class="text-muted fw-bold">IDUKA Luar Kota</div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="col-md-4">
       <div class="alert">
-        <LoadingPlaceholder v-if="isLoadingDalamKota" :row="1" :col="2" />
-        <div v-else class="fs-2 fw-bold">{{ iduka_dalam }}</div>
-        <div class="text-muted fw-bold">IDUKA Dalam Kota</div>
+        <div class="row">
+          <!-- <div class="col-md-3"> -->
+          <!--   <div class="fs-2"><i class="bi bi-geo-fill"></i></div> -->
+          <!-- </div> -->
+
+          <div class="col-md-9">
+            <LoadingPlaceholder v-if="isLoadingDalamKota" :row="1" :col="2" />
+            <div v-else class="fs-2 fw-bold">{{ iduka_dalam }}</div>
+            <div class="text-muted fw-bold">IDUKA Dalam Kota</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

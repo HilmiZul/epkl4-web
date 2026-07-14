@@ -1,19 +1,35 @@
 <template>
   <div class="row">
     <div class="col-md-6">
-      <div class="alert alert-secondary">
-        <LoadingPlaceholder v-if="isLoadingStudent" :row="1" :col="2" />
-        <div v-else class="fs-2 fw-bold">{{ students }}</div>
-        <div class="text-muted fw-bold">Peserta</div>
+      <div class="alert">
+        <div class="row">
+          <!-- <div class="col-md-2"> -->
+          <!--   <div class="fs-2"><i class="bi bi-person-arms-up"></i></div> -->
+          <!-- </div> -->
+
+          <div class="col-md-10">
+            <LoadingPlaceholder v-if="isLoadingStudent" :row="1" :col="2" />
+            <div v-else class="fs-2 fw-bold">{{ students }}</div>
+            <div class="text-muted fw-bold">Peserta</div>
+          </div>
+        </div>
       </div>
     </div>
 
 
     <div class="col-md-6">
       <div class="alert">
-        <LoadingPlaceholder v-if="isLoadingJurusan" :row="1" :col="2" />
-        <div v-else class="fs-2 fw-bold">{{ jurusan }}</div>
-        <div class="text-muted fw-bold">Konsentrasi Keahlian</div>
+        <div class="row">
+          <!-- <div class="col-md-2"> -->
+          <!--   <div class="fs-2"><i class="bi bi-building-fill"></i></div> -->
+          <!-- </div> -->
+
+          <div class="col-md-10">
+            <LoadingPlaceholder v-if="isLoadingJurusan" :row="1" :col="2" />
+            <div v-else class="fs-2 fw-bold">{{ jurusan }}</div>
+            <div class="text-muted fw-bold">Konsentrasi Keahlian</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

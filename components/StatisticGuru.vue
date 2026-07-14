@@ -1,26 +1,50 @@
 <template>
   <div class="row">
     <div class="col-md-4">
-      <div class="alert alert-secondary">
-        <LoadingPlaceholder v-if="isLoadingGuru" :row="1" :col="2" />
-        <div v-else class="fs-2 fw-bold">{{ teachers }}</div>
-        <div class="text-muted fw-bold">Total Guru Pembimbing</div>
+      <div class="alert">
+        <div class="row">
+          <!-- <div class="col-md-3"> -->
+          <!--   <div class="fs-2"><i class="bi bi-people-fill"></i></div> -->
+          <!-- </div> -->
+
+          <div class="col-md-9">
+            <LoadingPlaceholder v-if="isLoadingGuru" :row="1" :col="2" />
+            <div v-else class="fs-2 fw-bold">{{ teachers }}</div>
+            <div class="text-muted fw-bold">Total Guru</div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="col-md-4">
       <div class="alert">
-        <LoadingPlaceholder v-if="isLoadingGuruKejuruan" :row="1" :col="2" />
-        <div v-else class="fs-2 fw-bold">{{ teachers_jurusan }}</div>
-        <div class="text-muted fw-bold">Guru Kejuruan</div>
+        <div class="row">
+          <!-- <div class="col-md-3"> -->
+          <!--   <div class="fs-2"><i class="bi bi-person-fill-gear"></i></div> -->
+          <!-- </div> -->
+
+          <div class="col-md-9">
+            <LoadingPlaceholder v-if="isLoadingGuruKejuruan" :row="1" :col="2" />
+            <div v-else class="fs-2 fw-bold">{{ teachers_jurusan }}</div>
+            <div class="text-muted fw-bold">Guru Kejuruan</div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="col-md-4">
       <div class="alert">
-        <LoadingPlaceholder v-if="isLoadingGuruUmum" :row="1" :col="2" />
-        <div v-else class="fs-2 fw-bold">{{ teachers_general}}</div>
-        <div class="text-muted fw-bold">Guru Umum</div>
+        <div class="row">
+          <!-- <div class="col-md-3"> -->
+          <!--   <div class="fs-2"><i class="bi bi-person-lines-fill"></i></div> -->
+          <!-- </div> -->
+
+          <div class="col-md-9">
+            <LoadingPlaceholder v-if="isLoadingGuruUmum" :row="1" :col="2" />
+            <div v-else class="fs-2 fw-bold">{{ teachers_general}}</div>
+            <div class="text-muted fw-bold">Guru Umum</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
