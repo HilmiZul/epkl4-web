@@ -3,7 +3,7 @@
     <div class="card mb-5">
       <div class="card-body">
         <div class="fs-3 fw-bold">Jurnal</div>
-        <div class="text-muted mb-3">Update secara realtime</div>
+        <div class="text-muted mb-3">Catatan aktivitas harian</div>
 
         <div v-if="isLoading">
           <LoadingPlaceholder :row="1" :col="4" />
@@ -18,7 +18,7 @@
         </div>
 
         <ul v-else v-for="(item, i) in journals" :key="i" class="list-group">
-          <li class="list-group-item border-bottom border-2 border-grey rounded-0">
+          <li class="list-group-item  rounded-0">
             <div class="text-muted mb-2">{{ item.created }}</div>
 
             <main>
@@ -39,12 +39,6 @@ const journals = ref([])
 
 onMounted(() => {
   getJournals()
-  client.autoCancellation(false)
-  client.collection('jurnal').subscribe('*', function() {
-    if(e.action === 'create' || e.action === 'update') {
-      getJournals()
-    }
-  }, {})
 })
 
 
