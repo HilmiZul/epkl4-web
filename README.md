@@ -1,6 +1,6 @@
 # e-PKL Web
 
-Website containing about Praktik Kerja Lapangan, Dasar Hukum, IDUKA and so on.
+Website containing public information about Praktik Kerja Lapangan, Dasar Hukum, IDUKA and so on.
 
 # Ingredient
 
