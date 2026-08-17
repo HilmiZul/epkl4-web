@@ -1,3 +1,8 @@
+# v1.4.0 (17 Agustus 2026)
+
+- Remove border bottom in jurnal items
+- Disable realtime jurnal
+
 # v1.3.0 (13 Juli 2026)
 
 - Change collection name to view collection for public record Journals
