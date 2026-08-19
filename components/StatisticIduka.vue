@@ -1,19 +1,20 @@
 <template>
   <div class="row">
     <div class="col-md-4">
-      <div class="alert">
-        <div class="row">
-          <!-- <div class="col-md-3"> -->
-          <!--   <div class="fs-2"><i class="bi bi-buildings-fill"></i></div> -->
-          <!-- </div> -->
-
-          <div class="col-md-9">
-            <LoadingPlaceholder v-if="isLoading" :row="1" :col="2" />
-            <div v-else class="fs-2 fw-bold">{{ iduka }}</div>
-            <div class="text-muted fw-bold">Total IDUKA</div>
+      <NuxtLink to="/iduka" class="link">
+        <div class="alert">
+          <div class="row">
+            <!-- <div class="col-md-3"> -->
+            <!--   <div class="fs-2"><i class="bi bi-buildings-fill"></i></div> -->
+            <!-- </div> -->
+            <div class="col-md-9">
+              <LoadingPlaceholder v-if="isLoading" :row="1" :col="2" />
+              <div v-else class="fs-2 fw-bold">{{ iduka }}</div>
+              <div class="text-muted fw-bold">Total IDUKA <i class="bi bi-arrow-up-right-square"></i></div>
+            </div>
           </div>
         </div>
-      </div>
+      </NuxtLink>
     </div>
 
     <div class="col-md-4">
