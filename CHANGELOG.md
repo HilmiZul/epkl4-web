@@ -1,3 +1,10 @@
+# v1.5 (19 Agustus 2026)
+
+- Insert link on logo, change icon external link
+- Insert link on total IDUKA
+- Add some style to global layout
+- Fetch public IDUKA's records on IDUKA's page
+
 # v1.4.0 (17 Agustus 2026)
 
 - Remove border bottom in jurnal items
