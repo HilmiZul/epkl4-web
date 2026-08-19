@@ -237,7 +237,7 @@ input[type="checkbox"]:not(:checked) {
   border: 2px dashed #000 !important;
 }
 .smallest {
-  font-size: .8em;
+  font-size: .7em;
 }
 @media screen and (min-width: 992px) {
   .footer-mobile-view {
@@ -255,7 +255,7 @@ input[type="checkbox"]:not(:checked) {
 .sticky {
   position: -webkit-sticky !important;
   position: sticky !important;
-  top: 0;
+  top: 90px;
   z-index: 1;
 }
 .list-group-item:hover {
@@ -288,5 +288,24 @@ header {
 .logo-brand {
   border-radius: 32px !important;
   corner-shape: squircle;
+}
+
+button.nav-link {
+  font-size: .8em;
+  color: #7f7f7f;
+  border-radius: 0 !important;
+}
+
+button.nav-link:hover {
+  color: #2f2f2f;
+}
+
+button.nav-link.active,
+button.nav-link:focus {
+  color: #2f2f2f !important;
+  font-weight: bold;
+  border-left: 1.5px solid #7f7f7f !important;
+  border-top: 1.5px solid #7f7f7f !important;
+  border-right: 1.5px solid #7f7f7f !important;
 }
 </style>
