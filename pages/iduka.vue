@@ -105,7 +105,7 @@
 <script setup>
 useHead({
   "title": "IDUKA — e-PKL.",
-  "description": "Website resmi e-PKL SMKN 4 Tasikmalaya."
+  "description": "Daftar IDUKA: DKV, TOI, RPL, TSM dan TKJ — e-PKL SMKN 4 Tasikmalaya."
 })
 
 let client = usePocketBaseClient()
