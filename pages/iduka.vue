@@ -33,67 +33,107 @@
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane show active" id="nav-dkv" role="tabpanel" aria-labelledby="dkv-tab" tabindex="0">
           <ul v-for="(item, i) in items" :key="i" class="list-group list-group-flush">
-            <li v-if="item.prokel == 'DKV'" class="list-group-item d-flex justify-content-between align-items-start py-3">
-              <div class="me-auto">
-                <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
-                <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
-                <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-                <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-              </div>
-            </li>
+            <NuxtLink data-bs-toggle="modal" data-bs-target="#preview" @click="setModalPreview(item)" class="hand-cursor">
+              <li v-if="item.prokel == 'DKV'" class="list-group-item d-flex justify-content-between align-items-start py-3">
+                <div class="me-auto">
+                  <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
+                  <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
+                  <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                  <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                </div>
+              </li>
+            </NuxtLink>
           </ul>
         </div>
 
         <div class="tab-pane" id="nav-toi" role="tabpanel" aria-labelledby="toi-tab" tabindex="0">
           <ul v-for="(item, i) in items" :key="i" class="list-group list-group-flush">
-            <li v-if="item.prokel == 'TOI'" class="list-group-item d-flex justify-content-between align-items-start py-3">
-              <div class="me-auto">
-                <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
-                <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
-                <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-                <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-              </div>
-            </li>
+            <NuxtLink data-bs-toggle="modal" data-bs-target="#preview" @click="setModalPreview(item)" class="hand-cursor">
+              <li v-if="item.prokel == 'TOI'" class="list-group-item d-flex justify-content-between align-items-start py-3">
+                <div class="me-auto">
+                  <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
+                  <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
+                  <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                  <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                </div>
+              </li>
+              </NuxtLink>
           </ul>
         </div>
 
         <div class="tab-pane" id="nav-rpl" role="tabpanel" aria-labelledby="rpl-tab" tabindex="0">
           <ul v-for="(item, i) in items" :key="i" class="list-group list-group-flush">
-            <li v-if="item.prokel == 'PPLG'" class="list-group-item d-flex justify-content-between align-items-start py-3">
-              <div class="me-auto">
-                <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
-                <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
-                <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-                <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-              </div>
-            </li>
+            <NuxtLink data-bs-toggle="modal" data-bs-target="#preview" @click="setModalPreview(item)" class="hand-cursor">
+              <li v-if="item.prokel == 'PPLG'" class="list-group-item d-flex justify-content-between align-items-start py-3">
+                <div class="me-auto">
+                  <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
+                  <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
+                  <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                  <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                </div>
+              </li>
+            </NuxtLink>
           </ul>
         </div>
 
         <div class="tab-pane" id="nav-tsm" role="tabpanel" aria-labelledby="tsm-tab" tabindex="0">
           <ul v-for="(item, i) in items" :key="i" class="list-group list-group-flush">
-            <li v-if="item.prokel == 'TSM'" class="list-group-item d-flex justify-content-between align-items-start py-3">
-              <div class="me-auto">
-                <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
-                <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
-                <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-                <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-              </div>
-            </li>
+            <NuxtLink data-bs-toggle="modal" data-bs-target="#preview" @click="setModalPreview(item)" class="hand-cursor">
+              <li v-if="item.prokel == 'TSM'" class="list-group-item d-flex justify-content-between align-items-start py-3">
+                <div class="me-auto">
+                  <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
+                  <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
+                  <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                  <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                </div>
+              </li>
+            </NuxtLink>
           </ul>
         </div>
 
         <div class="tab-pane" id="nav-tkj" role="tabpanel" aria-labelledby="tkj-tab" tabindex="0">
           <ul v-for="(item, i) in items" :key="i" class="list-group list-group-flush">
-            <li v-if="item.prokel == 'TJKT'" class="list-group-item d-flex justify-content-between align-items-start py-3">
-              <div class="me-auto">
-                <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
-                <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
-                <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-                <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
-              </div>
-            </li>
+            <NuxtLink data-bs-toggle="modal" data-bs-target="#preview" @click="setModalPreview(item)" class="hand-cursor">
+              <li v-if="item.prokel == 'TJKT'" class="list-group-item d-flex justify-content-between align-items-start py-3">
+                <div class="me-auto">
+                  <div class="fw-bold text-muted mb-1">{{ item.nama }}</div>
+                  <div class="text-muted small">Terisi <strong>{{ item.terisi }}</strong> dari <strong>{{ item.jumlah_kuota }}</strong></div>
+                  <div v-if="item.wilayah == 'dalam'" class="badge border border-1 border-grey text-muted smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                  <div v-else class="badge text-bg-dark smallest rounded-pill mb-2 me-2">{{ item.wilayah }} kota</div>
+                </div>
+              </li>
+            </NuxtLink>
           </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- single modal: preview IDUKA -->
+    <div class="modal" id="preview" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content shadow-lg">
+          <div class="modal-header fw-bold text-muted">
+            {{ preview?.nama }}
+            <button class="btn-close" label="Close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="mb-3">
+              <span class="smallest badge rounded-pill text-muted border-grey me-2">{{ preview?.wilayah }} kota</span>
+              <span class="smallest badge rounded-pill text-muted border-grey">terisi <strong>{{ preview?.terisi }}</strong> dari <strong>{{ preview?.jumlah_kuota }}</strong></span>
+            </div>
+
+            <div class="fw-bold text-muted">Alamat</div>
+            <div class="text-muted mb-3">{{ preview?.alamat }}</div>
+
+            <div class="fw-bold text-muted">Catatan</div>
+            <div class="text-muted mb-2">{{ preview?.catatan ? preview?.catatan : '-' }}</div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-bs-dismiss="modal">Oke!</button>
+          </div>
         </div>
       </div>
     </div>
@@ -114,6 +154,8 @@ let isLoading = ref(true)
 let isError = ref(false)
 let errorMessages = ref('')
 let items = ref([])
+
+let preview = ref('')
 
 onMounted(() => {
   fetchItems()
@@ -138,4 +180,12 @@ async function fetchItems() {
     errorMessages.value = err
   }
 }
+
+function setModalPreview(item) {
+  preview.value = item
+}
+
+
+
+
 </script>
