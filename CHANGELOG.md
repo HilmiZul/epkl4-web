@@ -1,3 +1,7 @@
+# v1.6 (21 Agustus 2026)
+
+- Create modal preview IDUKA
+
 # v1.5 (19 Agustus 2026)
 
 - Insert link on logo, change icon external link
