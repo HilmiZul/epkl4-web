@@ -308,4 +308,9 @@ button.nav-link:focus {
   border-top: 1.5px solid #7f7f7f !important;
   border-right: 1.5px solid #7f7f7f !important;
 }
+
+.modal .modal-dialog .modal-content {
+  border-radius: 32px !important;
+  corner-shape: squircle;
+}
 </style>
