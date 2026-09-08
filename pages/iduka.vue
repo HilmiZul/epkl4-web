@@ -112,8 +112,8 @@
     <!-- single modal: preview IDUKA -->
     <div class="modal" id="preview" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content shadow-lg">
-          <div class="modal-header fw-bold text-muted">
+        <div class="modal-content border border-2 border-dark shadow-lg">
+          <div class="modal-header fw-bold text-muted border-bottom-0">
             {{ preview?.nama }}
             <button class="btn-close" label="Close" data-bs-dismiss="modal"></button>
           </div>
@@ -131,8 +131,8 @@
             <div class="text-muted mb-2">{{ preview?.catatan ? preview?.catatan : '-' }}</div>
           </div>
 
-          <div class="modal-footer">
-            <button class="btn btn-dark" data-bs-dismiss="modal">Oke!</button>
+          <div class="modal-footer border-top-0 justify-content-between">
+            <button class="btn btn-dark" data-bs-dismiss="modal">Tutup</button>
           </div>
         </div>
       </div>
