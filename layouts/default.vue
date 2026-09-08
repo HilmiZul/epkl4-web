@@ -43,13 +43,13 @@ html, body {
   font-style: normal;
 }
 .shadow-lg {
-  box-shadow: 0.4rem 0.4rem 0 #000000 !important;
+  box-shadow: 0.2rem 0.2rem 0 #000000 !important;
 }
 .card {
   border-radius: 32px !important;
   corner-shape: squircle;
   border: 2.5px solid #000000 !important;
-  box-shadow: 0.4rem 0.4rem 0 #000000 !important;
+  box-shadow: 0.2rem 0.2rem 0 #000000 !important;
 }
 .card .card-header {
   border-bottom: 2.5px solid #000 !important;
@@ -67,7 +67,7 @@ html, body {
   /*border: 1.9px solid #000000;*/
   border-radius: 32px !important;
   corner-shape: squircle;
-  box-shadow: 0.19rem 0.19rem 0 #000000 !important;
+  box-shadow: 0.2rem 0.2rem 0 #000000 !important;
 }
 .btn:hover {
   transform: translate(2px,2px);
@@ -84,7 +84,7 @@ html, body {
   font-weight: 550;
   border: 2.3px solid #000000;
   border-radius: 0 !important;
-  box-shadow: 0.19rem 0.19rem 0 #000000 !important;
+  box-shadow: 0.2rem 0.2rem 0 #000000 !important;
 }
 .form:focus {
   border-color: #000000;
@@ -258,6 +258,11 @@ input[type="checkbox"]:not(:checked) {
   top: 90px;
   z-index: 1;
 }
+
+.list-group-item {
+  border-bottom: 1px solid #d0d0d0 !important;
+}
+
 .list-group-item:hover {
   background-color: #f9f9f9;
 }
@@ -293,7 +298,9 @@ header {
 button.nav-link {
   font-size: .8em;
   color: #7f7f7f;
-  border-radius: 0 !important;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  corner-shape: squircle;
 }
 
 button.nav-link:hover {
