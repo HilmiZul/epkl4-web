@@ -1,3 +1,9 @@
+# v1.7 (8 September 2026)
+
+- Squircle in IDUKA's tab, spareted item with border bottom list
+- Remove quote symbol in hero section
+- Clean Jurnal content using white space, spareted item with border bottom list
+
 # v1.6 (21 Agustus 2026)
 
 - Create modal preview IDUKA
