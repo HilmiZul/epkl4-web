@@ -18,10 +18,10 @@
         </div>
 
         <ul v-else v-for="(item, i) in journals" :key="i" class="list-group">
-          <li class="list-group-item  rounded-0">
+          <li class="list-group-item border-bottom border-bottom-1 border-bottom-grey rounded-0">
             <div class="text-muted mb-2">{{ item.created }}</div>
 
-            <main>
+            <main class="pre-text">
               {{ item.deskripsi }}
             </main>
           </li>
