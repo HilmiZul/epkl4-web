@@ -1,3 +1,7 @@
+# v1.8 (10 September 2026)
+
+- Show message if items is empty
+
 # v1.7 (8 September 2026)
 
 - Squircle in IDUKA's tab, spareted item with border bottom list
