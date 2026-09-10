@@ -9,6 +9,11 @@
       <LoadingPlaceholder :row="7" :col="12" />
     </div>
 
+    <div v-else-if="!isLoading && items.length == 0" class="my-5 text-center text-muted">
+      <i class="bi bi-database fs-1"></i>
+      <h5>Tidak tersedia</h5>
+    </div>
+
     <div v-else class="mb-5">
       <nav class="sticky bg-white py-3">
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
