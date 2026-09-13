@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-07-07',
   devtools: { enabled: false },
   ssr: false,
+  vue: {
+    vapor: true,
+  },
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "bootstrap-icons/font/bootstrap-icons.min.css",
