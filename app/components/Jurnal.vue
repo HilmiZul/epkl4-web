@@ -32,7 +32,7 @@
 </template>
 
 
-<script setup>
+<script setup vapor>
 const client = usePocketBaseClient()
 const isLoading = ref(false)
 const journals = ref([])

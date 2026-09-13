@@ -4,6 +4,6 @@
   </p>
 </template>
 
-<script setup>
+<script setup vapor>
 let props = defineProps(['col', 'row'])
 </script>
