@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": "5.2",
     "bootstrap-icons": "^1.13.1",
-    "nuxt": "3.18",
+    "nuxt": "^4.5.2",
     "pocketbase": "^0.27.0"
   },
   "keywords": [
