@@ -1,3 +1,7 @@
+# v1.9 (13 September 2026)
+
+- Vapor mode
+
 # v1.8 (10 September 2026)
 
 - Show message if items is empty
