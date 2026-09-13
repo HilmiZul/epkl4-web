@@ -1,6 +1,8 @@
 # v1.9 (13 September 2026)
 
 - Vapor mode
+- Upgrade Nuxt v4.5.2
+- Update structrue directory
 
 # v1.8 (10 September 2026)
 
