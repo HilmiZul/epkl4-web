@@ -51,7 +51,7 @@
 </template>
 
 
-<script setup>
+<script setup vapor>
 const client = usePocketBaseClient()
 const isLoadingGuru = ref(false)
 const isLoadingGuruKejuruan = ref(false)

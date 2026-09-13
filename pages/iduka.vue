@@ -147,7 +147,7 @@
 </template>
 
 
-<script setup>
+<script setup vapor>
 useHead({
   "title": "IDUKA — e-PKL.",
   "description": "Daftar IDUKA: DKV, TOI, RPL, TSM dan TKJ — e-PKL SMKN 4 Tasikmalaya."

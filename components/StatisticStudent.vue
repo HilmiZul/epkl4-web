@@ -36,7 +36,7 @@
 </template>
 
 
-<script setup>
+<script setup vapor>
 const client = usePocketBaseClient()
 const isLoadingStudent = ref(false)
 const isLoadingJurusan = ref(false)
