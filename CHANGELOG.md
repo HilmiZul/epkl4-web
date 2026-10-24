@@ -1,3 +1,8 @@
+# v1.10 (24 Oktober 2026)
+
+- Upgrade Nuxt
+- Upgrade runtime: Node and bun
+
 # v1.9 (13 September 2026)
 
 - Vapor mode
