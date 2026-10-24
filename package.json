@@ -2,6 +2,7 @@
   "name": "epkl4-web",
   "version": "1.9",
   "author": "Zul Hilmi",
+  "type": "module",
   "description": "Website resmi e-PKL - Praktik Kerja Lapangan.",
   "scripts": {
     "dev": "nuxt dev",
@@ -11,7 +12,7 @@
   "dependencies": {
     "bootstrap": "5.2",
     "bootstrap-icons": "^1.13.1",
-    "nuxt": "^4.5.2",
+    "nuxt": "^4.6.2",
     "pocketbase": "^0.27.0"
   },
   "keywords": [
