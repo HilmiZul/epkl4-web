@@ -1,3 +1,7 @@
+# v1.10.1 (5 November 2026)
+
+Upgrade Nuxt version 4.6.4
+
 # v1.10 (24 Oktober 2026)
 
 - Upgrade Nuxt
