@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   vue: {
-    vapor: true,
+    vapor: false,
   },
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
@@ -23,6 +23,13 @@ export default defineNuxtConfig({
         { src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2/dist/js/bootstrap.bundle.min.js" },
       ]
     }
+  },
+  // Workaround bug Nuxt 4.6.4: `devServer.host` yang tidak di-set akan
+  // ter-resolve menjadi objek kosong `{}` (bukan string/undefined), sehingga
+  // `nuxt dev` gagal dengan "options.hostname.toLowerCase is not a function".
+  // Nilainya di-set eksplisit agar selalu berupa string.
+  devServer: {
+    host: process.env.NUXT_HOST || process.env.NITRO_HOST || process.env.HOST || 'localhost',
   },
   runtimeConfig: {
     public: {
