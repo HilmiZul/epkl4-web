@@ -1,3 +1,12 @@
+# v1.10.2 (21 November 2026)
+
+Bug fixes:
+- Nuxt 4.6.4 -> devServer.host!
+- Disable vapor mode (soon)
+
+- Update dependency
+- Create .npmrc file to allow remote dependency from url
+
 # v1.10.1 (5 November 2026)
 
 Upgrade Nuxt version 4.6.4
